@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Care Chat - World Bank</title>
+</head>
+<body>
+  <h1>Customer Care Chat</h1>
+  <div id="chat-box"></div>
+  <input type="text" id="chat-input" placeholder="Type a message">
+  <button onclick="sendMessage()">Send</button>
+  <script>
+    function sendMessage() {
+      var input = document.getElementById('chat-input');
+      var box = document.getElementById('chat-box');
+      box.innerHTML += '<p>You: ' + input.value + '</p>';
+      input.value = '';
+    }
+  </script>
+</body>
+</html>
